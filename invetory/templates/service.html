@@ -1,0 +1,49 @@
+{%  extends 'base.html' %}
+{%load static%}
+
+{% block content%}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Our Services</h2>
+    
+    <div class="row">
+      <!-- Service 1 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="{% static 'assets/img/juma.jpg'%}" class="card-img-top" alt="Service 1">
+          <div class="card-body">
+            <h5 class="card-title">Inventory Tracking</h5>
+            <p class="card-text">Track your products with real-time data updates. Monitor stock levels, locations, and product history seamlessly.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Service 2 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="{% static 'assets/img/track.avif'%}" class="card-img-top" alt="Service 2">
+          <div class="card-body">
+            <h5 class="card-title">Automatic Replenishment</h5>
+            <p class="card-text">Set thresholds for automatic stock replenishment and avoid stockouts by getting notifications when your stock is low.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Service 3 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="{% static 'assets/img/images.jpg'%}" class="card-img-top" alt="Service 3">
+          <div class="card-body">
+            <h5 class="card-title">Reporting & Analytics</h5>
+            <p class="card-text">Generate detailed reports on sales, stock levels, and product movements. Analyze data to make informed business decisions.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+{%endblock%}

@@ -1,0 +1,41 @@
+{%  extends 'base.html' %}
+
+{%load static%}
+
+
+{% block content%}
+  <div class="col-md-6 offset-md-3">
+    <h3>WELCOME TO REGIGISTRATION </h3>
+   
+   <br>
+     <form action="" method="post">
+        {% csrf_token%}
+        
+
+  <div class="mb-3">
+    <label  class="form-label">Username</label>
+    <input type="text" class="form-control" aria-describedby="emailHelp" name="username" required placeholder="Enter Username">
+
+  </div>
+       <div class="mb-3">
+    <label  class="form-label">Email</label>
+    <input type="email" class="form-control" aria-describedby="emailHelp" name="email" required placeholder="Enter Email">
+
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">Password</label>
+    <input type="password" class="form-control" name="password" required placeholder="Enter password">
+  </div><div class="mb-3">
+    <label  class="form-label">Comfirm Password</label>
+    <input type="password" class="form-control" name="password1" required placeholder="Enter password">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Register</button>
+  <div class="mt-3 text-center">
+    <p>Already have an account? <a href="{%url 'login'%}">Login here</a></p>
+</div>
+</form>
+
+
+   </div>
+{%endblock%}

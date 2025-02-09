@@ -1,0 +1,20 @@
+{%  extends 'base.html' %}
+
+{%load static%}
+
+
+{% block content%}
+<div class="row">
+    <div class="col-sm-11 col-md-4 mx-auto mt-5 px-3" >
+        <h1 class="fw-light">Track and Manage your Inventory</h1>
+        <p class="fw-light">
+            keep track of your inventory and recieve quantity alerts for low inventory
+        </p>
+        <div class="">
+            <a href="{%url 'dashboard'%}" class="btn btn-primary">Get Started Now!</a>
+        </div>
+
+
+    </div>
+</div>
+{%endblock%}

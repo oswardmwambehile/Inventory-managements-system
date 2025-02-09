@@ -1,0 +1,24 @@
+{%  extends 'base.html' %}
+{%load static%}
+
+{% block content%}
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>About Our Inventory Management System</h2>
+        <p>Our Inventory Management System is designed to streamline and optimize the process of managing stock, tracking product levels, and ensuring smooth operations for businesses of all sizes.</p>
+        <ul>
+          <li><strong>Real-time Stock Updates</strong> - Keep track of your inventory in real-time.</li>
+          <li><strong>Intuitive Dashboard</strong> - A user-friendly dashboard to view and manage your stock.</li>
+          <li><strong>Low Stock Alerts</strong> - Automatically get notified when your stock levels are running low.</li>
+          <li><strong>Easy Integration</strong> - Easily integrate with your existing systems for seamless operations.</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <img src="{% static 'assets/img/juma.jpg'%}" class="img-fluid rounded" alt="Inventory Management System" style="width: 500px; height: 300px;">
+      </div>
+    </div>
+  </div>
+
+
+{%endblock%}
